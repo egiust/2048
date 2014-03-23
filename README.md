@@ -6,7 +6,7 @@ Made just for fun as a sunday afternoon project. [Play it here!](http://egiust.g
 ### Screenshot
 
 <p align="center">
-  <img src="http://imgur.com/0OZNMZJ" alt="Screenshot"/>
+  <img src="http://i.imgur.com/0OZNMZJ.png?1" alt="Screenshot"/>
 </p>
 
 Screenshot of the last game of my pet-monkey. 
