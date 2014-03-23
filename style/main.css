@@ -2,8 +2,8 @@
 html, body {
   margin: 0;
   padding: 0;
-  background: #faf8ef;
-  color: #776e65;
+  background: #FFE4FF;
+  color: #3E2A40;
   font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
   font-size: 18px; }
 
@@ -47,7 +47,7 @@ h1.title {
     top: -50px;
     opacity: 0; } }
 .scores-container {
-  float: right;
+  float: left;
   text-align: right; }
 
 .score-container, .best-container {
@@ -98,7 +98,8 @@ h1.title {
 p {
   margin-top: 0;
   margin-bottom: 10px;
-  line-height: 1.65; }
+  line-height: 1.65; 
+  font-size: 18px;}
 
 a {
   color: #776e65;
