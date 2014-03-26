@@ -726,92 +726,126 @@ hr {
     display: block;
     margin: 0 auto;
     margin-bottom: 20px; } }
-.pp-donate button {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  border: none;
-  font: inherit;
-  color: inherit;
-  cursor: pointer;
-  display: inline-block;
-  background: #8f7a66;
-  border-radius: 3px;
-  padding: 0 20px;
-  text-decoration: none;
-  color: #f9f6f2;
-  height: 40px;
-  line-height: 42px; }
-  .pp-donate button img {
-    vertical-align: -4px;
-    margin-right: 8px; }
 
-.btc-donate {
-  position: relative;
-  margin-left: 10px;
-  display: inline-block;
-  background: #8f7a66;
-  border-radius: 3px;
-  padding: 0 20px;
-  text-decoration: none;
-  color: #f9f6f2;
-  height: 40px;
-  line-height: 42px;
-  cursor: pointer; }
-  .btc-donate img {
-    vertical-align: -4px;
-    margin-right: 8px; }
-  .btc-donate a {
-    color: #f9f6f2;
-    text-decoration: none;
-    font-weight: normal; }
-  .btc-donate .address {
-    cursor: auto;
-    position: absolute;
-    width: 340px;
-    right: 50%;
-    margin-right: -170px;
-    padding-bottom: 7px;
-    top: -30px;
-    opacity: 0;
-    pointer-events: none;
-    -webkit-transition: 400ms ease;
-    -moz-transition: 400ms ease;
-    transition: 400ms ease;
-    -webkit-transition-property: top, opacity;
-    -moz-transition-property: top, opacity;
-    transition-property: top, opacity; }
-    .btc-donate .address:after {
-      position: absolute;
-      border-top: 10px solid #bbada0;
-      border-right: 7px solid transparent;
-      border-left: 7px solid transparent;
-      content: "";
-      bottom: 0px;
-      left: 50%;
-      margin-left: -7px; }
-    .btc-donate .address code {
-      background-color: #bbada0;
-      padding: 10px 15px;
-      width: 100%;
-      border-radius: 3px;
-      line-height: 1;
-      font-weight: normal;
-      font-size: 15px;
-      font-family: Consolas, "Liberation Mono", Courier, monospace;
-      text-align: center; }
-  .btc-donate:hover .address, .btc-donate .address:hover .address {
-    opacity: 1;
-    top: -45px;
-    pointer-events: auto; }
-  @media screen and (max-width: 480px) {
-    .btc-donate {
-      width: 120px; }
-      .btc-donate .address {
-        margin-right: -150px;
-        width: 300px; }
-        .btc-donate .address code {
-          font-size: 13px; }
-        .btc-donate .address:after {
-          left: 50%;
-          bottom: 2px; } }
+	
+	/* Coin tipping widget */
+ .dogeContainer {
+            margin-bottom: 10px;
+            width: 350px;
+            height: 53px;
+            position: relative;
+            font-family: Helvetica, Arial, sans-serif;
+        }
+
+        .coinbackground {
+            background-color: #FFE4FF;
+            border: 1px solid #e9eaee;
+            width: 350px;
+            height: 53px;
+            font-family: Helvetica, Arial, sans-serif;
+            font-size: 15px;
+            font-weight: bold;
+            color: #3a3a3a;
+            position: relative;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        
+        .accepted {
+            position: absolute;
+            left: 16px;
+            top: 8px;
+            width: 300px;
+            -moz-transition: all 2s ease;
+            -webkit-transition: all 2s ease;
+            -o-transition: all 2s ease;
+            -ms-transition: all 2s ease;
+            transition: all 2s ease;
+            background-color: #fafafa;
+            padding: 10px 29px;
+        }
+
+
+        .coin {
+            position: absolute;
+            left: -28px;
+            top: -3px;
+            z-index: 2;
+            -moz-transition: all 2s ease;
+            -webkit-transition: all 2s ease;
+            -o-transition: all 2s ease;
+            -ms-transition: all 2s ease;
+            transition: all 2s ease;
+        }
+
+
+        .dogeContainer:hover > .coinbackground > .accepted {
+            -moz-transition: all 2s ease;
+            -webkit-transition: all 2s ease;
+            -o-transition: all 2s ease;
+            -ms-transition: all 2s ease;
+            transition: all 2s ease;
+            opacity: 1;
+            -webkit-transform: translateX(0px);
+            -moz-transform: translateX(0);
+            -o-transform: translateX(0);
+            -ms-transform: translateX(0);
+            transform: translateX(0);
+            left: 300px;
+        }
+
+        .dogeContainer:hover > .coin {
+            -moz-transition: all 2s ease;
+            -webkit-transition: all 2s ease;
+            -o-transition: all 2s ease;
+            -ms-transition: all 2s ease;
+            transition: all 2s ease;
+            -moz-transform: rotate(690deg);
+            -webkit-transform: rotate(690deg);
+            -o-transform: rotate(670deg);
+            -ms-transform: rotate(670deg);
+            transform: rotate(670deg);
+            left: 300px;
+        }
+
+        .rddadress {
+            position: absolute;
+            left: 10px;
+            top: 15px;
+            width: 320px;
+            -webkit-transform: translateX(0);
+            -moz-transform: translateX(0);
+            -o-transform: translateX(0);
+            -ms-transform: translateX(0);
+            transform: translateX(0);
+            padding: 4px;
+            background-color: #fafafa;
+            border: none;
+            font-family: 'Comic Sans MS';
+            font-size: 12px;
+            font-weight: normal;
+            color: #333333;
+        }
+
+        .dogeContainer:hover > .rddadress {
+            -moz-transition: all 2s ease;
+            -webkit-transition: all 2s ease;
+            -o-transition: all 2s ease;
+            -ms-transition: all 2s ease;
+            transition: all 2s ease;
+            opacity: 1;
+            -webkit-transform: translateX(0);
+            -moz-transform: translateX(0);
+            -o-transform: translateX(0);
+            -ms-transform: translateX(0);
+            transform: translateX(0);
+        }
+        
+        .wallet {
+            position: relative;
+            top: -2px;
+        }
+
+/* End coin tipping widget */
